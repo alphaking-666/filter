@@ -9,7 +9,7 @@ class script(object):
 ✿  𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 & 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙼𝙾𝙽𝙶𝙾𝙳𝙱 | 𝙷𝙴𝚁𝙾𝙺𝚄
 ✿  𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Source - https://t.me/thefilmyspot
+- Join For More 🤪 - https://t.me/thefilmyspot
 <b>DEVS:</b>
 - <a href=https://t.me/thefilmyspot>RUBY 💛😚</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
