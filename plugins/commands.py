@@ -91,7 +91,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Search Here🔍👀', switch_inline_query_current_chat=''),
-            InlineKeyboardButton(' Updates Channel ❕', url='https://t.me/thefilmyspotup')
+            InlineKeyboardButton(' Updates Channel ❕', url='https://t.me/thefilmyspotin')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -227,7 +227,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('No such file exist 🙂.')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
