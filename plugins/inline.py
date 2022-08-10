@@ -21,13 +21,13 @@ async def inline_users(query: InlineQuery):
 
 @Client.on_inline_query()
 async def answer(bot, query):
-    """Show search results for given inline query"""
+    """Show Search Results for Your Inline ReQuest"""
     
     if not await inline_users(query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='okDa',
-                           switch_pm_parameter="hehe")
+                           switch_pm_text='Okey Bye 🚶🏻‍♂️',
+                           switch_pm_parameter="Hehe 😂")
         return
 
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
@@ -103,7 +103,7 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('Search again 🔃', switch_inline_query_current_chat=query)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
