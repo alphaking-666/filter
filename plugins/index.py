@@ -23,7 +23,7 @@ async def index_files(bot, query):
     if raju == 'reject':
         await query.message.delete()
         await bot.send_message(int(from_user),
-                               f'Your Submission for indexing {chat} has been decliened by our moderators.',
+                               f'Your Submission for indexing {chat} has been Rejected 😏.',
                                reply_to_message_id=int(lst_msg_id))
         return
 
@@ -34,7 +34,7 @@ async def index_files(bot, query):
     await query.answer('Processing...⏳', show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
-                               f'Your Submission for indexing {chat} has been accepted by our moderators and will be added soon.',
+                               f'Your Submission for indexing {chat} has been accepted & will be added soon.',
                                reply_to_message_id=int(lst_msg_id))
     await msg.edit(
         "Starting Indexing",
@@ -77,7 +77,7 @@ async def send_for_index(bot, message):
     try:
         k = await bot.get_messages(chat_id, last_msg_id)
     except:
-        return await message.reply('Make Sure That Iam An Admin In The Channel, if channel is private')
+        return await message.reply('Make Sure That Bot  Admin On That Channel, if channel is private')
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
 
@@ -100,7 +100,7 @@ async def send_for_index(bot, message):
         try:
             link = (await bot.create_chat_invite_link(chat_id)).invite_link
         except ChatAdminRequired:
-            return await message.reply('Make sure iam an admin in the chat and have permission to invite users.')
+            return await message.reply('Make sure i am an admin in the chat and have permission to invite users.')
     else:
         link = f"@{message.forward_from_chat.username}"
     buttons = [
